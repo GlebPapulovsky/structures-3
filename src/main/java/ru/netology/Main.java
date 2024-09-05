@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public abstract class Main {
     public static void main(String[] args) {
-        Logger logger = new ConsoleLogger();logger.log("ConsoleLogger initial.");
+        Logger logger = new ConsoleLogger();
+        logger.log("ConsoleLogger initial.");
         Basket basket = new Basket();
         Offers offers = new Offers();
         Scanner in = new Scanner(System.in);
@@ -48,12 +49,12 @@ public abstract class Main {
                     System.exit(0);
                     break;
                 }
-                case 6:{
+                case 6: {
                     logger.out();
                     waitingAction();
                     break;
                 }
-                default:{
+                default: {
                     logger.log("Wrong input number for switch.");
                     System.out.println("Wrong choice out of range!Try again.");
                     break;
